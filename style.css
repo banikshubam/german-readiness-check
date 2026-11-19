@@ -1,0 +1,28 @@
+:root{--ink:#1d2433;--muted:#5b6578;--line:#dde2ea;--bg:#f6f8fb;--card:#fff;--accent:#1f5eff;--good:#168a4a;--warn:#c27a00;--bad:#c23a2b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+main{max-width:640px;margin:0 auto;padding:24px 16px 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:16px}
+h1{font-size:26px;margin:0 0 8px}
+h2{font-size:20px;margin:0 0 12px}
+p{margin:0 0 12px}
+.muted{color:var(--muted);font-size:14px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:12px 20px;font-size:16px;cursor:pointer}
+.btn:disabled{background:#aab6d6;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.progress{height:6px;background:var(--line);border-radius:6px;margin-bottom:16px;overflow:hidden}
+.progress>div{height:100%;background:var(--accent)}
+.tag{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}
+.passage{background:var(--bg);border-left:4px solid var(--accent);padding:12px 14px;border-radius:6px;margin-bottom:14px;white-space:pre-line}
+.option{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:16px;cursor:pointer}
+.option:hover{border-color:var(--accent)}
+.option.selected{border-color:var(--accent);background:#eef3ff}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:8px}
+.verdict{font-size:22px;font-weight:700;margin-bottom:4px}
+.verdict.ready{color:var(--good)}.verdict.almost{color:var(--warn)}.verdict.notyet{color:var(--bad)}
+.bar{margin:12px 0}
+.bar .label{display:flex;justify-content:space-between;font-size:15px;margin-bottom:4px}
+.bar .track{height:12px;background:var(--line);border-radius:8px;overflow:hidden}
+.bar .fill{height:100%;border-radius:8px}
+ol.todo{padding-left:20px;margin:0}
+ol.todo li{margin-bottom:10px}
